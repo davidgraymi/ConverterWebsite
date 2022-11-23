@@ -4,6 +4,6 @@
 
 git add .
 echo "Enter a commit message"
-read msg
+read -a msg
 git commit -m $msg
 git push origin
