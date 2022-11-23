@@ -1,9 +1,11 @@
 #!/bin/sh
 
-# Creates branch locally and remotely, and checks it out
+# adds all changes, commits, and pushes to origin
 
 git add .
 echo "Enter a commit message"
 read -a msg
-git commit -m $msg
+msgstr=$(printf " %s" "${msg[@]}")
+echo $msgstr
+git commit -m "$msgstr"
 git push origin
