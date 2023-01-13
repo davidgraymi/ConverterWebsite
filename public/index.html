@@ -83,11 +83,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@gray_dave_">
-  <meta name="twitter:image" content="topographic-map.tiff" />
+  <meta name="twitter:image" content="background.jpg" />
   <meta property="og:url" content="https://decimalminutes.com" />
   <meta property="og:title" content="Decimal Minutes" />
   <meta property="og:description" content="A degrees to degrees minutes decimal minutes converter." />
-  <meta property="og:image" content="topographic-map.tiff" />
+  <meta property="og:image" content="background.jpg" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
@@ -101,13 +101,13 @@
     }
 
     .bgimg {
-      background-image: url('topographic-map.tiff');
+      background-image: url('background.jpg');
       min-height: 100%;
       background-position: center;
       background-size: cover;
       alt: "a background image of a map containing latitude, longitude, and elevation values";
     }
-    
+
     /* Chrome, Safari, Edge, Opera */
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
@@ -153,12 +153,11 @@
           <div class="w3-container w3-white w3-padding-16" id="convertFields">
 
             <div id="converter-item" class="w3-row-padding" style="margin:0 -16px;">
-              <div class="w3-col" style="width:95%">
+              <div class="w3-col" style="width:92%; margin-right:-16px">
                 <div class="w3-half" id="left-container">
                   <div class="w3-row-padding" style="margin:0 -16px;">
                     <div class="w3-col s11 m11 l11">
-                      <input class="w3-input w3-border" type="number" id="left-degrees"
-                        min="-99999" max="99999">
+                      <input class="w3-input w3-border" type="number" id="left-degrees" min="-99999" max="99999">
                     </div>
                     <div class="w3-col s1 m1 l1">
                       <label style="font-size:200%;">°</label>
@@ -168,15 +167,13 @@
                 <div class="w3-half" id="right-container">
                   <div class="w3-row-padding" style="margin:0 -16px;">
                     <div class="w3-col s11 m5 l5">
-                      <input class="w3-input w3-border" type="number" id="right-degrees"
-                        min="-99999" max="99999">
+                      <input class="w3-input w3-border" type="number" id="right-degrees" min="-99999" max="99999">
                     </div>
                     <div class="w3-col s1 m1 l1">
                       <label style="font-size:200%;">°</label>
                     </div>
                     <div class="w3-col s11 m5 l5">
-                      <input class="w3-input w3-border" type="number" id="right-minutes"
-                        min="-99999" max="99999">
+                      <input class="w3-input w3-border" type="number" id="right-minutes" min="-99999" max="99999">
                     </div>
                     <div class="w3-col s1 m1 l1">
                       <label style="font-size:200%;">'</label>
@@ -184,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <div class="w3-col" style="width:5%;">
+              <div class="w3-col" style="width:8%; margin-right:16px">
                 <button class="w3-button w3-circle w3-light-grey" id="add-button">+</button>
               </div>
             </div>
@@ -205,7 +202,7 @@
 
   <template id="fieldTemplate">
     <div id="converter-item" class="w3-row-padding" style="margin:0 -16px;">
-      <div class="w3-col" style="width:95%">
+      <div class="w3-col" style="width:92%; margin-right:-16px">
         <div class="w3-half" id="left-container">
           <div class="w3-row-padding" style="margin:0 -16px;">
             <div class="w3-col s11 m11 l11">
@@ -233,9 +230,9 @@
           </div>
         </div>
       </div>
-      <div class="w3-col" style="width:5%;">
-        <button class="w3-button w3-circle w3-light-grey" id="add-button">+</button>
-        <button class="w3-button w3-circle w3-light-grey" id="remove-button">o</button>
+      <div class="w3-col w3-row" style="width:8%; margin-right:0px">
+        <button class="w3-button w3-circle w3-light-grey w3-half" id="add-button">+</button>
+        <button class="w3-button w3-circle w3-light-grey w3-half" id="remove-button">o</button>
       </div>
     </div>
   </template>
